@@ -33,7 +33,7 @@ def graph(d1, d2, m, row, num, stress, inter):
 
     t = np.arange(len(d1.index))
     text="Stress=%0.3f"%stress+", Inter="+str(inter)
-    plt.scatter(d1["x1"], d1["x2"], c=np.reshape(t,(-1, len(t))), edgecolors='none', cmap=plt.matplotlib.cm.jet, zorder=2, s=20)
+    plt.scatter(d1["x1"], d1["x2"], edgecolors='none', cmap=plt.matplotlib.cm.jet, zorder=2, s=20)  # c=np.reshape(t,(-1, len(t))), 
     y_min,y_max = ax.get_ylim()
     x_min,x_max = ax.get_xlim()
     plt.xticks(np.arange(math.floor(x_min), math.ceil(x_max), math.ceil((math.ceil(x_max)-math.ceil(x_min))/5)))
