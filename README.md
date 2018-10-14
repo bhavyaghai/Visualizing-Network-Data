@@ -4,6 +4,10 @@ This repository includes python code and data used for my poster presentation at
 
 We will upload the code & data shortly after our work is accepted in IEEE InfoVis 2017 
 
+### Install jupyter in anaconda environment
+conda install jupyter
+conda install nb_conda
+conda install ipykernel
 
 ### Documentation
 
